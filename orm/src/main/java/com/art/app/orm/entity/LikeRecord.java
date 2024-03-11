@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 点赞记录表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @TableName("like_record")

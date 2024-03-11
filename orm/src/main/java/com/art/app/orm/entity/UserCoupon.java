@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 用户名下优惠券信息表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-27
  */
 @TableName("user_coupon")

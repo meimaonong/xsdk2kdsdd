@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 浏览记录表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface ReadRecordMapper extends BaseMapper<ReadRecord> {

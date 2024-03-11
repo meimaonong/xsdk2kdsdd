@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 内容配置表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @TableName("operation_config")

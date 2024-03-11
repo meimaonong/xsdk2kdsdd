@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 文章与标签关联表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @TableName("article_tag_association")

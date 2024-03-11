@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-04-09
  */
 @TableName("user_reject_record")

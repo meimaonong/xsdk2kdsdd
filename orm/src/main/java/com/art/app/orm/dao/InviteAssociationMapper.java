@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 用户关注表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface InviteAssociationMapper extends BaseMapper<InviteAssociation> {

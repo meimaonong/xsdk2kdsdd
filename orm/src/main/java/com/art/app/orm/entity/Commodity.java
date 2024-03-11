@@ -10,7 +10,7 @@ import java.util.Date;
  * 精选（推荐商品）文章表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public class Commodity implements Serializable {

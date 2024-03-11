@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-27
  */
 @TableName("user_push_token")

@@ -10,7 +10,7 @@ import java.util.List;
  * 文章表 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface ArticleService extends IService<Article> {

@@ -19,7 +19,7 @@ import java.io.Serializable;
  * 活动表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 @TableName("sketching_activity")

@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-04-09
  */
 public interface UserRejectRecordMapper extends BaseMapper<UserRejectRecord> {

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * 视频课程表 服务实现类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 @Service

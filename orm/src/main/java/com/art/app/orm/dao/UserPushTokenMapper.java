@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
  * Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-27
  */
 public interface UserPushTokenMapper extends BaseMapper<UserPushToken> {

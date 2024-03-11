@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 画友都在搜配置表 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface SearchKeywordService extends IService<SearchKeyword> {

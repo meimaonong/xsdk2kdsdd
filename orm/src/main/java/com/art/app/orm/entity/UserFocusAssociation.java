@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 用户关注表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @TableName("user_focus_association")

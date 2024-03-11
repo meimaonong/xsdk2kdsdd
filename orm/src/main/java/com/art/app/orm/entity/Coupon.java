@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 优惠基本信息劵
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-27
  */
 public class Coupon implements Serializable {

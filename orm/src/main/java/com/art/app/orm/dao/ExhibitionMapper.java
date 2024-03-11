@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 展览表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface ExhibitionMapper extends BaseMapper<Exhibition> {

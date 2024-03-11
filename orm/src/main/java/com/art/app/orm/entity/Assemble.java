@@ -11,7 +11,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-06
  */
 public class Assemble implements Serializable {

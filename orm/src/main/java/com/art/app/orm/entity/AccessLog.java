@@ -13,7 +13,7 @@ import java.util.Date;
  *
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-03-28
  */
 @TableName("access_log")

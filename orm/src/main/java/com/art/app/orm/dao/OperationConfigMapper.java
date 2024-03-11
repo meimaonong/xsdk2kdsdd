@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 内容配置表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface OperationConfigMapper extends BaseMapper<OperationConfig> {

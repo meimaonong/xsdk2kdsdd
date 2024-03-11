@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 优惠基本信息劵 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-27
  */
 public interface CouponMapper extends BaseMapper<Coupon> {

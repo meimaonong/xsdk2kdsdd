@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 活动表 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface SketchingActivityService extends IService<SketchingActivity> {

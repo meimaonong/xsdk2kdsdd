@@ -13,7 +13,7 @@ import java.util.Map;
  * Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface MemberPointMapper extends BaseMapper<MemberPoint> {

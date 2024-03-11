@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 @TableName("member_point")

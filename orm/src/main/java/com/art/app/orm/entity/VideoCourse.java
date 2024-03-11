@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 视频课程表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 @TableName("video_course")

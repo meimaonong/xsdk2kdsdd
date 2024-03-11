@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 画友都在搜配置表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @TableName("search_keyword")

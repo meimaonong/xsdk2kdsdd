@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * 展览表 服务实现类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 @Service

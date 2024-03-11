@@ -14,7 +14,7 @@ import java.util.List;
  * 用户关注表 服务实现类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @Service

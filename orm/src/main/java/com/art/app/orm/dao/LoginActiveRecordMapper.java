@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 登录或激活记录表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface LoginActiveRecordMapper extends BaseMapper<LoginActiveRecord> {

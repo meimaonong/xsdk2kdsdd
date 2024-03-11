@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  *  服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-19
  */
 public interface VersionControlService extends IService<VersionControl> {

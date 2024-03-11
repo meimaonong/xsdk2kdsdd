@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  *  服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-03-27
  */
 public interface ArtistApplyService extends IService<ArtistApply> {

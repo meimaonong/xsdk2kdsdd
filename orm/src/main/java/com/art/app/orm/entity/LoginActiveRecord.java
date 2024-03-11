@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 登录或激活记录表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 @TableName("login_active_record")

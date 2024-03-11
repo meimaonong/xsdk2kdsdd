@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 优惠基本信息劵 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-27
  */
 public interface CouponService extends IService<Coupon> {

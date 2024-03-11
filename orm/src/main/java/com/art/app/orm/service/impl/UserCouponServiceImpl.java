@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * 用户名下优惠券信息表 服务实现类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-27
  */
 @Service

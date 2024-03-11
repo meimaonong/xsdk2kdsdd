@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
  * Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-04-09
  */
 public interface UserBanRecordMapper extends BaseMapper<UserBanRecord> {

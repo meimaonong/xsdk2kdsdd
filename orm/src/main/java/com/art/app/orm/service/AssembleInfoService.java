@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  *  服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-06
  */
 public interface AssembleInfoService extends IService<AssembleInfo> {

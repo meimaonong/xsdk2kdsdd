@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
  * Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-06-06
  */
 public interface AssembleMapper extends BaseMapper<Assemble> {

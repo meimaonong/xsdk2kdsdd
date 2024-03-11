@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 展览表 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface ExhibitionService extends IService<Exhibition> {

@@ -12,7 +12,7 @@ import java.io.Serializable;
  * 验证码表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-19
  */
 @TableName("verification_code")

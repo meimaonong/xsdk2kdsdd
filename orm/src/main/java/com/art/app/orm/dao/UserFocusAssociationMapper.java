@@ -11,7 +11,7 @@ import java.util.List;
  * 用户关注表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface UserFocusAssociationMapper extends BaseMapper<UserFocusAssociation> {

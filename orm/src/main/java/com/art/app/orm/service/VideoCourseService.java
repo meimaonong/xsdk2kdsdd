@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 视频课程表 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface VideoCourseService extends IService<VideoCourse> {

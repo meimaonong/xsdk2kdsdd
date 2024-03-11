@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  * 浏览记录表 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2019-12-17
  */
 public interface ReadRecordService extends IService<ReadRecord> {

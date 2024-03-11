@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * 视频课程表 Mapper 接口
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface VideoCourseMapper extends BaseMapper<VideoCourse> {

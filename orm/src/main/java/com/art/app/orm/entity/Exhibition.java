@@ -18,7 +18,7 @@ import java.io.Serializable;
  * 展览表
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public class Exhibition implements Serializable {

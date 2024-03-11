@@ -10,7 +10,7 @@ import java.util.Map;
  * 服务类
  * </p>
  *
- * @author dragon123
+ * @author john
  * @since 2020-05-30
  */
 public interface MemberPointService extends IService<MemberPoint> {
