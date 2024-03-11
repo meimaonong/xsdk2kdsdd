@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.art.app.orm.dao.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.art.app.orm.entity.Article">
+        <id column="id" property="id"/>
+        <result column="sn_id" property="snId"/>
+        <result column="is_recommend" property="isRecommend"/>
+        <result column="rank" property="rank"/>
+        <result column="user_id" property="userId"/>
+        <result column="like_num" property="likeNum"/>
+        <result column="read_num" property="readNum"/>
+        <result column="type" property="type"/>
+        <result column="mode" property="mode"/>
+        <result column="from" property="from"/>
+        <result column="title" property="title"/>
+        <result column="keywords" property="keywords"/>
+        <result column="video_url" property="videoUrl"/>
+        <result column="thumb_url" property="thumbUrl"/>
+        <result column="description" property="description"/>
+        <result column="content" property="content"/>
+        <result column="is_draft" property="isDraft"/>
+        <result column="reject_message" property="rejectMessage"/>
+        <result column="status" property="status"/>
+        <result column="created_at" property="createdAt"/>
+        <result column="updated_at" property="updatedAt"/>
+        <result column="del_flag" property="delFlag"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sn_id AS snId, is_recommend AS isRecommend, rank, user_id AS userId, like_num AS likeNum, read_num AS readNum, type, mode, from, title, keywords, video_url AS videoUrl, thumb_url AS thumbUrl, description, content, is_draft AS isDraft, reject_message AS rejectMessage, status, created_at AS createdAt, updated_at AS updatedAt, del_flag AS delFlag
+    </sql>
+
+    <select id="findTagArticles" resultMap="BaseResultMap">
+        select
+        a.id, a.sn_id, a.is_recommend, a.rank, a.user_id, a.like_num, a.read_num, a.type, a.mode, a.from, a.title,
+        a.keywords, a.video_url, a.thumb_url, a.description, a.content, a.created_at
+        from article a join article_tag_association ata on a.id = ata.article_id
+        where a.status = 3 and a.del_flag = 0 and ata.del_flag = 0 and
+        a.user_id in
+        <foreach collection="collection" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        order by a.created_at desc
+    </select>
+
+    <select id="findViewCountByAuthorId" resultType="java.lang.Integer">
+        select sum(read_num) from article where user_id = #{userId} and del_flag = 0
+    </select>
+
+    <select id="findNonVideoTagArticleCount" resultType="java.lang.Integer">
+        select count(*) from article a join article_tag_association ata on a.id = ata.article_id
+        where a.status = 3 and a.del_flag = 0 and ata.del_flag = 0 and ata.tag_id != 1
+        and a.title like "%"#{keywords}"%"
+    </select>
+
+    <select id="findNonTagArticlesByKeywords" resultMap="BaseResultMap">
+        select
+        a.id, a.sn_id, a.is_recommend, a.rank, a.user_id, a.like_num, a.read_num, a.type, a.mode, a.from, a.title,
+        a.keywords, a.video_url, a.thumb_url, a.description, a.created_at
+        from article a join article_tag_association ata on a.id = ata.article_id
+        where a.status = 3 and a.del_flag = 0 and ata.del_flag = 0 and ata.tag_id != 1
+        and a.title like "%"#{keywords}"%" limit #{pageIndex}, #{pageSize}
+    </select>
+
+    <select id="findVideoTagArticleCount" resultType="java.lang.Integer">
+        select count(*) from article a join article_tag_association ata on a.id = ata.article_id
+        where a.status = 3 and a.del_flag = 0 and ata.del_flag = 0 and ata.tag_id = 1
+        and a.title like "%"#{keywords}"%"
+    </select>
+
+    <select id="findVideoTagArticlesByKeywords" resultMap="BaseResultMap">
+        select
+        a.id, a.sn_id, a.is_recommend, a.rank, a.user_id, a.like_num, a.read_num, a.type, a.mode, a.from, a.title,
+        a.keywords, a.video_url, a.thumb_url, a.description, a.created_at
+        from article a join article_tag_association ata on a.id = ata.article_id
+        where a.status = 3 and a.del_flag = 0 and ata.del_flag = 0 and ata.tag_id = 1
+        and a.title like "%"#{keywords}"%" limit #{pageIndex}, #{pageSize}
+    </select>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.art.app.orm.dao.AssembleInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.art.app.orm.entity.AssembleInfo">
+        <id column="id" property="id"/>
+        <result column="type" property="type"/>
+        <result column="sn_id" property="snId"/>
+        <result column="title" property="title"/>
+        <result column="count" property="count"/>
+        <result column="apply_stop_time" property="applyStopTime"/>
+        <result column="user_id" property="userId"/>
+        <result column="del_flag" property="delFlag"/>
+        <result column="created_at" property="createdAt"/>
+        <result column="updated_at" property="updatedAt"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, type, sn_id AS snId, title, count, apply_stop_time AS applyStopTime, user_id AS userId, del_flag AS delFlag, created_at AS createdAt, updated_at AS updatedAt
+    </sql>
+
+    <update id="updateCountById">
+        update assemble_info
+        SET `count` = `count` + #{addNumber}, updated_at = now()
+        WHERE id = #{id} AND `count` > 0
+    </update>
+
+</mapper>
